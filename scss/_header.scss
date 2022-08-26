@@ -1,0 +1,63 @@
+/* HEADER */
+.header {
+  padding: 1rem;
+}
+.title__profile {
+  align-self: start;
+  padding: 0 1rem;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.title__profile--strong {
+  font-weight: 900;
+  font-size: 0.9em;
+  display: block;
+}
+
+.subtitle__profile {
+  font-family: "Source Code Pro", monospace;
+  text-align: end;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: -1px;
+  width: 100%;
+  background-color: #00ffff;
+  padding: 0.5rem 1rem;
+}
+
+.img__profile {
+  max-width: 100%;
+  margin: 0.5rem 0;
+  box-shadow: 1px 1px 5px black;
+}
+
+/* NAV__BAR */
+
+.nav__bar__ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.barnav__link__activo {
+  font-size: 95%;
+  background-color: #00ffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.barnav__link:hover {
+  border-bottom: 5px solid #00ffff;
+  transition: all 200ms ease;
+}
