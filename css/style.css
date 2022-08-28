@@ -186,7 +186,7 @@ body .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   visibility: hidden;
   z-index: 3;
 }
@@ -286,11 +286,11 @@ body .container {
 }
 .footer .section__dev {
   font-family: "Source sans Pro", monospace;
-  color: #303030;
+  color: #5a5a5a;
   font-size: 1em;
   font-weight: 600;
   margin-top: 3rem;
-  border-top: 1px solid black;
+  border-top: 2px groove #5a5a5a;
   padding-top: 1rem;
 }
 
