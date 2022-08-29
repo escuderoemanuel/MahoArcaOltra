@@ -2,11 +2,11 @@
 .main {
   padding: 1rem;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     padding: 1rem 2rem;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 900px) {
     padding: 1rem 4rem;
   }
 
@@ -37,7 +37,7 @@
       width: 100%;
       height: auto;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 600px) {
         width: auto;
         max-height: 250px;
       }
@@ -64,7 +64,7 @@
     justify-content: flex-start;
     visibility: hidden;
     z-index: 3;
-
+    
     &.active {
       visibility: visible;
     }
@@ -72,6 +72,8 @@
 
   .popup {
     position: absolute;
+    /* z-index: 5; */
+    /* width: 75%; */
     max-height: 80vh;
     background-color: rgba(241, 241, 241, 0.5);
     border-radius: 15px;
@@ -125,7 +127,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     padding: 1rem 2rem 2rem 2rem;
   }
 

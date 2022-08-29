@@ -13,11 +13,11 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 600px) {
       width: 90%;
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 900px) {
       width: 85%;
     }
   }
