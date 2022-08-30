@@ -12,6 +12,13 @@ body {
   background-color: #f0f0f0;
   color: #000000;
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border-radius: 5px;
+}
 body .container {
   width: 95%;
   margin: 2rem auto;
@@ -122,9 +129,26 @@ body .container {
   padding: 0.5rem;
   border-radius: 5px;
 }
-.header .nav__bar__ul .barnav__link:hover {
-  border-bottom: 5px solid #1cffd9;
-  transition: all 200ms ease;
+.header .nav__bar__ul .barnav__link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+.header .nav__bar__ul .barnav__link:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #1cffd9;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+.header .nav__bar__ul .barnav__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* MAIN */
@@ -185,32 +209,35 @@ body .container {
   left: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   visibility: hidden;
-  z-index: 3;
+  z-index: 1;
 }
 .main .overlay.active {
   visibility: visible;
 }
 .main .popup {
   position: absolute;
-  /* z-index: 5; */
-  /* width: 75%; */
+  width: 100%;
   max-height: 80vh;
   background-color: rgba(241, 241, 241, 0.5);
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   overflow: auto;
   word-wrap: break-word;
   padding: 1rem;
   opacity: 0;
-  transition: opacity 800ms;
+  transition: opacity 1s;
 }
 .main .popup.active {
   opacity: 1;
+}
+.main .popup::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.main .popup::-webkit-scrollbar-thumb {
+  background-color: #1cffd9;
+  border-radius: 20px;
 }
 .main .btn__cerrar__popup {
   display: block;
@@ -288,7 +315,7 @@ body .container {
 }
 .footer .section__dev {
   font-family: "Source sans Pro", monospace;
-  color: #5a5a5a;
+  color: #2f2f2f;
   font-size: 1em;
   font-weight: 600;
   margin-top: 3rem;

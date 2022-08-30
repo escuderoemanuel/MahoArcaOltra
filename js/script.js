@@ -5,7 +5,8 @@ var btnAbrirCreature = document.getElementById("btn__creature"),
   popup__creature = document.getElementById("popup__creature"),
   btnCerrarCreature = document.getElementById("ico__close__creature");
 
-btnAbrirCreature.addEventListener("click", function () {
+btnAbrirCreature.addEventListener("click", function (e) {
+  e.preventDefault();
   overlay__creature.classList.add("active");
   popup__creature.classList.add("active");
 });
@@ -22,7 +23,8 @@ var btnAbrirLeft = document.getElementById("btn__left"),
   popup__left = document.getElementById("popup__left"),
   btnCerrarLeft = document.getElementById("ico__close__left");
 
-btnAbrirLeft.addEventListener("click", function () {
+btnAbrirLeft.addEventListener("click", function (e) {
+  e.preventDefault();
   overlay__left.classList.add("active");
   popup__left.classList.add("active");
 });
@@ -39,7 +41,8 @@ var btnAbrirGems = document.getElementById("btn__gems"),
   popup__gems = document.getElementById("popup__gems"),
   btnCerrarGems = document.getElementById("ico__close__gems");
 
-btnAbrirGems.addEventListener("click", function () {
+btnAbrirGems.addEventListener("click", function (e) {
+  e.preventDefault();
   overlay__gems.classList.add("active");
   popup__gems.classList.add("active");
 });
@@ -56,7 +59,8 @@ var btnAbrirLily = document.getElementById("btn__lily"),
   popup__lily = document.getElementById("popup__lily"),
   btnCerrarLily = document.getElementById("ico__close__lily");
 
-btnAbrirLily.addEventListener("click", function () {
+btnAbrirLily.addEventListener("click", function (e) {
+  e.preventDefault();
   overlay__lily.classList.add("active");
   popup__lily.classList.add("active");
 });
@@ -73,7 +77,8 @@ var btnAbrirHolding = document.getElementById("btn__holding"),
   popup__holding = document.getElementById("popup__holding"),
   btnCerrarHolding = document.getElementById("ico__close__holding");
 
-btnAbrirHolding.addEventListener("click", function () {
+btnAbrirHolding.addEventListener("click", function (e) {
+  e.preventDefault();
   overlay__holding.classList.add("active");
   popup__holding.classList.add("active");
 });
