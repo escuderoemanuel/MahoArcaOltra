@@ -8,6 +8,7 @@ Used technology:
 HTML 5
 CSS 3
 SASS
+JavaScript
 NPM
 Git
 GitHub
